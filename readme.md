@@ -17,7 +17,7 @@ Existing elements you can found here.
 ###### maatwerkonline-page-builder/elements
 If you want override element then just put the same element the theme element folder.
 
-###### wp-content/themes/your-theme/spacer.php
+###### wp-content/themes/your-theme/elements/spacer.php
 
 Now Page Builder will execute file from the theme element folder. Now according your requirement you modify the element.
 
@@ -164,5 +164,39 @@ These the settings which is executed when a event triggerd on the elements. I ha
 		),
 ?>
 ```
+
+## How to add custom icons to the pagebuilder
+Page builder already supports lot of icons. If still user want to add more icons then user can add using below steps.
+
+Place a icon folder on below positions & place all icons files like otf, svg, ttf, woff, woff2.
+
+###### wp-content/themes/your-theme/icons
+
+In above folder also place the icons.css & place all css related to your custom icons.
+
+###### wp-content/themes/your-theme/icons/icons.css 
+
+Final step place a php file (icons.php) in the icon folder then location become.
+###### wp-content/themes/your-theme/icons/icons.php
+
+Now put the php code in the above file.
+``` php
+<?php 
+//Place the name of icons like font awesome
+// In icons array place all icons like fa fa-glass, fa fa-music, fa fa-search
+$ompb_icons_array['FontAwesome'] = array(
+	'name' => 'Font Awesome Icons',
+	'icons' => array( 
+		'fa fa-glass',
+		'fa fa-music',
+		'fa fa-search',
+	)
+); 
+?>
+```
+
+
+
+
 
 
