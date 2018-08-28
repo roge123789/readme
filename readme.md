@@ -134,3 +134,35 @@ function pb_icon_pb_shortcode( $atts, $content = null ) {
 }
 ?>
 ```
+
+## Active callback.
+
+These the settings which is executed when a event triggerd on the elements. I have shown you a example in which I have applied the active_callback on the border. So, If the value of border "rounded" then it will hide the class & id else it will show the fields.
+
+```php
+<?php 
+		'border' => array(
+			'description' => __('Border', 'onlinemarketingnl' ),
+			'default' => 'None',
+			'type' => 'select',
+			'values' => array(
+				'sharp' =>  __('Sharp', 'onlinemarketingnl' ),
+				'rounded' =>  __('Rounded', 'onlinemarketingnl' ),
+				'rounded-top' =>  __('Rounded top', 'onlinemarketingnl' ),
+				'rounded-right' =>  __('Rounded right', 'onlinemarketingnl' ),
+				'rounded-bottom' =>  __('Rounded bottom', 'onlinemarketingnl' ),
+				'rounded-left' =>  __('Rounded left', 'onlinemarketingnl' ),
+				'rounded-circle' =>  __('Rounded circle', 'onlinemarketingnl' ),
+			),
+			'active_callback'    => array(
+				array(
+					'setting'  => array('id','class'),
+					'operator' => '==',
+					'value'    => 'rounded',
+				)
+			)
+		),
+?>
+```
+
+
