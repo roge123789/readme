@@ -1,3 +1,6 @@
+# Page Builder by Maatwerk Online
+![](http://beta.nickelanddime.nl/onlinemarketingnl/logo/logo.png)
+
 ## Features
 
 - Complete user friendly  UI. Every thing you can using drag & drop 
@@ -5,11 +8,8 @@
 - Support bootsrap & lot of icons.
 
 
-# Page Builder by Maatwerk Online.md
-
-![](http://beta.nickelanddime.nl/onlinemarketingnl/logo/logo.png)
-
 The Page Builder contain the below things.
+
 ## Elements
 By defualt plugin have lot or inbuilt elements. But there is one option by which developer can override the existing elements & also create new elements.
 Existing elements you can found here.
@@ -195,7 +195,19 @@ $ompb_icons_array['FontAwesome'] = array(
 ?>
 ```
 
+## page builder supported plugin.
+Page builder supports many popular plugins. So that if user install on our website then pagebuilder will automatcaly support there shortcode & there element will enable in the backend. Page builder supports below plugins.
 
+- AB Simple Subscribe
+- AB Testimonials
+- AB Tweet Scroller
+- Abdev Portfolio
+- Contact Form 7
+- Flipbook
+- Gravityforms
+- Revslider
+- Woocommerce
+- Wp Video
 
 
 
