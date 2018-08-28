@@ -7,7 +7,7 @@
 
 # Page Builder by Maatwerk Online.md
 
-![](https://www.maatwerkonline.nl/images/logo.png)
+![](http://beta.nickelanddime.nl/onlinemarketingnl/logo/logo.png)
 
 The Page Builder contain the below things.
 ## Elements
